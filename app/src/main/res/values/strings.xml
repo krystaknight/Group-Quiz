@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Great Minds</string>
+    <string name="start_new_quiz">Start New Quiz</string>
+    <string name="startquiz">Start Quiz</string>
+    <string name="token">Enter Token</string>
+
+    <string name="please_input_quiz_id">Enter Token</string>
+    <string name="userID">username</string>
+
+    <string name="password">PASSWORD</string>
+
+    <string name="ipaddress">Ipaddress</string>
+    <string name="Cancel">Cancel</string>
+    <string name="ChooseCourse">Choose Course</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="empty"></string>
+    <string name="my_classes">My Classes</string>
+    <string name="group">Group(Testing click after quiz)</string>
+
+    <string name="submitQuizDefaultText">These questions are not complete. Tap on question to go back.</string>
+
+    <string name="submitButtonText">Submit</string>
+    <string name="submissionVerificationQuestion">Are you sure you want to submit?</string>
+    <string name="submitDialogTitle">Verification</string>
+    <string name="submitQuizDialogue">Submit Quiz</string>
+    <string name="group_quiz_next_question_button">Next Question</string>
+    <string name="login">Login</string>
+    <string name="hint_tap_class_to_start_a_quiz">Hint: Tap class to start a quiz</string>
+</resources>

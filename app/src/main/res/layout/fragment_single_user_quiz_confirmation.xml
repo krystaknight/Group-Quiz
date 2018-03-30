@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/singleUserQuizSubmitButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/singleUserQuizSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/submitButtonText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/singleUserQuizSubmitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="25dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/submitQuizDefaultText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singleUserQuizSubmitTextView"
+        android:layout_above="@id/singleUserQuizSubmitButtonContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/singleUserQuizSubmitUnfinishedQuestionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+</RelativeLayout>

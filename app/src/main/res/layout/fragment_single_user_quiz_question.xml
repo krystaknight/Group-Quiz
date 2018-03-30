@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/singleUserQuizPointsPossibleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="4 points" />
+
+
+        <TextView
+            android:id="@+id/singleUserQuizQuestionNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Question 1" />
+
+
+        <TextView
+            android:id="@+id/singleUserQuizPointsRemainingTextView"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0 points left" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/singleUserQuizQuestionTitleTextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:text="" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/singleUserQuizAnswerContainer">
+
+            <TextView
+                android:id="@+id/singleUserQuizQuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

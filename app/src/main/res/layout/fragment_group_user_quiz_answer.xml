@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/groupQuizAnswerPointsAllocatedTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/groupQuizAnswerTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="8"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/empty"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:id="@+id/groupQuizScratchFragmentContainer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/groupQuizScratchOffCorrectImage"
+                    android:layout_gravity="center"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/ic_group_answer_correct"
+                    android:src="@drawable/ic_group_answer_correct"
+                    android:visibility="invisible"
+                    />
+
+                <ImageView
+                    android:id="@+id/groupQuizScratchOffIncorrectImage"
+                    android:layout_gravity="center"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/ic_group_answer_incorrect"
+                    android:src="@drawable/ic_group_answer_incorrect"
+                    android:visibility="invisible"/>
+
+                <RelativeLayout
+                    android:id="@+id/groupQuizScratchOffLoadingContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ProgressBar
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true" />
+                </RelativeLayout>
+
+                <edu.umsl.quizlet.GroupQuiz.ErasableCanvas
+                    android:id="@+id/groupQuizScratchOffCanvas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/groupQuizAnswerValueTextView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Guess" />-->
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

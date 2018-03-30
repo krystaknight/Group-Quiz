@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorPrimaryLight">#E1BEE7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="trans_white">#80FFFFFF</color>
+    <color name="hint_color">#aaa</color>
+    <color name="single_user_quiz_timer_med">#ba68c8</color>
+    <color name="single_user_quiz_timer_high">#FF4081</color>
+    <color name="single_user_quiz_minus_button_bg">#f48fb1</color>
+    <color name="single_user_quiz_plus_button_bg">#ccff90</color>
+</resources>

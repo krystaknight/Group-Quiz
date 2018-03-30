@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/quiz_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/singleUserQuizTimerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans_white"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <ProgressBar
+            android:id="@+id/singleUserQuizTimerProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:max="100"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/singleUserQuizTimerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondaryText"
+            android:gravity="center"
+            android:text="20:00" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/singleUserQuizTimerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/singleUserQuizQuestionListRecycler"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
